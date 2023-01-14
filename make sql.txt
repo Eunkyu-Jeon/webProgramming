@@ -1,0 +1,46 @@
+create table noticedata (
+id int,
+title varchar(100),
+name varchar(30),
+type varchar(10),
+content varchar(1000),
+wtime varchar(40),
+primary key(id));
+
+create table welfarenotice (
+id int,
+title varchar(100),
+name varchar(30),
+type varchar(40),
+content varchar(1000),
+wtime varchar(50),
+primary key(id));
+
+
+create table wdata(
+bbsID int,  
+name varchar(30),
+addr varchar(50),
+number varchar(30),
+location varchar(10),
+link varchar(40),
+type varchar(10),
+bbsAvailable int,
+primary key(bbsid));
+
+
+
+create table user (
+userID varchar(20),
+userPassword varchar(20),
+userName varchar(20));
+
+
+create table bbs (
+bbsID int,
+bbsTitle varchar(20),
+userID varchar(20),
+bbsDate datetime,
+bbsContent varchar(2048),
+bbsAvailable int,
+primary key(bbsID));
